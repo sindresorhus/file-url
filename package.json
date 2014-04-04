@@ -1,0 +1,39 @@
+{
+  "name": "file-url",
+  "version": "0.0.0",
+  "description": "Convert a path to a file url: unicorn.jpg ➔ file:///Users/sindresorhus/unicorn.jpg",
+  "license": "MIT",
+  "repository": "sindresorhus/file-url",
+  "bin": {
+    "file-url": "cli.js"
+  },
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "cli.js",
+    "index.js"
+  ],
+  "keywords": [
+    "cli",
+    "bin",
+    "app",
+    "file",
+    "url",
+    "uri",
+    "path",
+    "scheme",
+    "slash"
+  ],
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
