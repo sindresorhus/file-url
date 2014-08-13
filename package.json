@@ -1,16 +1,16 @@
 {
   "name": "file-url",
   "version": "0.1.0",
-  "description": "Convert a path to a file url: unicorn.jpg ➔ file:///Users/sindresorhus/unicorn.jpg",
+  "description": "Convert a path to a file url: unicorn.jpg → file:///Users/sindresorhus/unicorn.jpg",
   "license": "MIT",
   "repository": "sindresorhus/file-url",
-  "bin": {
-    "file-url": "cli.js"
-  },
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
+  },
+  "bin": {
+    "file-url": "cli.js"
   },
   "engines": {
     "node": ">=0.10.0"

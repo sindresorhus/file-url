@@ -1,11 +1,11 @@
 # file-url [![Build Status](https://travis-ci.org/sindresorhus/file-url.svg?branch=master)](https://travis-ci.org/sindresorhus/file-url)
 
-> Convert a path to a file url: `unicorn.jpg` ➔ `file:///Users/sindresorhus/unicorn.jpg`
+> Convert a path to a file url: `unicorn.jpg` → `file:///Users/sindresorhus/unicorn.jpg`
 
 
 ## Install
 
-```bash
+```sh
 $ npm install --save file-url
 ```
 
@@ -25,26 +25,22 @@ fileUrl('/Users/pony/pics/unicorn.jpg');
 
 ## CLI
 
-You can also use it as a CLI app by installing it globally:
-
-```bash
+```sh
 $ npm install --global file-url
 ```
 
-#### Usage
-
-```bash
+```sh
 $ file-url --help
 
-Usage
-  $ file-url [path]
+  Usage
+    file-url [path]
 
-Example
-  $ file-url
-  file:///Users/sindresorhus/dev/file-url
+  Example
+    file-url
+    file:///Users/sindresorhus/dev/file-url
 ```
 
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com)

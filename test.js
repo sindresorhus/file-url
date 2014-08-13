@@ -1,6 +1,6 @@
 'use strict';
 var assert = require('assert');
-var fileUrl = require('./index');
+var fileUrl = require('./');
 
 it('should convert path to file url', function () {
 	assert(/file:\/\/\/.*\/test\.jpg/.test(fileUrl('test.jpg')));
