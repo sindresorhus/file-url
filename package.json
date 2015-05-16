@@ -7,11 +7,9 @@
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
+    "url": "sindresorhus.com"
   },
-  "bin": {
-    "file-url": "cli.js"
-  },
+  "bin": "cli.js",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -23,6 +21,7 @@
     "index.js"
   ],
   "keywords": [
+    "cli-app",
     "cli",
     "bin",
     "app",
@@ -33,10 +32,10 @@
     "scheme",
     "slash"
   ],
-  "devDependencies": {
-    "mocha": "*"
-  },
   "dependencies": {
     "meow": "^3.1.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
   }
 }

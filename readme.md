@@ -5,7 +5,7 @@
 
 ## Install
 
-```sh
+```
 $ npm install --save file-url
 ```
 
@@ -25,18 +25,18 @@ fileUrl('/Users/pony/pics/unicorn.jpg');
 
 ## CLI
 
-```sh
+```
 $ npm install --global file-url
 ```
 
-```sh
+```
 $ file-url --help
 
   Usage
-    file-url [path]
+    $ file-url [path]
 
   Example
-    file-url
+    $ file-url
     file:///Users/sindresorhus/dev/file-url
 ```
 

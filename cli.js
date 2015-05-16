@@ -6,10 +6,10 @@ var fileUrl = require('./');
 var cli = meow({
 	help: [
 		'Usage',
-		'  file-url [path]',
+		'  $ file-url [path]',
 		'',
 		'Example',
-		'  file-url',
+		'  $ file-url',
 		'  file:///Users/sindresorhus/dev/file-url'
 	].join('\n')
 });
