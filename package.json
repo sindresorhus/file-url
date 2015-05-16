@@ -35,5 +35,8 @@
   ],
   "devDependencies": {
     "mocha": "*"
+  },
+  "dependencies": {
+    "meow": "^3.1.0"
   }
 }
