@@ -1,6 +1,6 @@
 {
   "name": "file-url",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert a path to a file url: unicorn.jpg → file:///Users/sindresorhus/unicorn.jpg",
   "license": "MIT",
   "repository": "sindresorhus/file-url",
