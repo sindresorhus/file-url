@@ -11,7 +11,7 @@ var cli = meow({
 		'Example',
 		'  $ file-url',
 		'  file:///Users/sindresorhus/dev/file-url'
-	].join('\n')
+	]
 });
 
 console.log(fileUrl(cli.input[0] || process.cwd()));

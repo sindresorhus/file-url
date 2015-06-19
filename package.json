@@ -33,7 +33,7 @@
     "slash"
   ],
   "dependencies": {
-    "meow": "^3.1.0"
+    "meow": "^3.3.0"
   },
   "devDependencies": {
     "mocha": "*"
