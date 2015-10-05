@@ -13,13 +13,13 @@ $ npm install --save file-url
 ## Usage
 
 ```js
-var fileUrl = require('file-url');
+const fileUrl = require('file-url');
 
 fileUrl('unicorn.jpg');
-//=> file:///Users/sindresorhus/dev/file-url/unicorn.jpg
+//=> 'file:///Users/sindresorhus/dev/file-url/unicorn.jpg'
 
 fileUrl('/Users/pony/pics/unicorn.jpg');
-//=> file:///Users/pony/pics/unicorn.jpg
+//=> 'file:///Users/pony/pics/unicorn.jpg'
 ```
 
 
