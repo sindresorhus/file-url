@@ -20,6 +20,10 @@ fileUrl('unicorn.jpg');
 
 fileUrl('/Users/pony/pics/unicorn.jpg');
 //=> 'file:///Users/pony/pics/unicorn.jpg'
+
+// passing {resolve: false} as second argument will not call path.resolve() on the path
+fileUrl('unicorn.jpg', {resolve: false);
+//=> 'file:///unicorn.jpg'
 ```
 
 
