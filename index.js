@@ -6,14 +6,15 @@ module.exports = function (str, options) {
 		throw new Error('Expected a string');
 	}
 
+	options = options || {};
+
 	var pathName = str;
 
-	if (typeof options !== 'object' || options.resolve) {
+	if (options.resolve !== false) {
 		pathName = path.resolve(str);
 	}
 
 	pathName = pathName.replace(/\\/g, '/');
-
 
 	// Windows drive letter must be prefixed with a slash
 	if (pathName[0] !== '/') {
