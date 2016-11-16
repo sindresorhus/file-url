@@ -1,7 +1,7 @@
 {
   "name": "file-url",
   "version": "1.1.0",
-  "description": "Convert a path to a file url: unicorn.jpg → file:///Users/sindresorhus/unicorn.jpg",
+  "description": "Convert a path to a file url: `unicorn.jpg` → `file:///Users/sindresorhus/unicorn.jpg`",
   "license": "MIT",
   "repository": "sindresorhus/file-url",
   "author": {
@@ -9,22 +9,16 @@
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com"
   },
-  "bin": "cli.js",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
-    "test": "xo && mocha"
+    "test": "xo && ava"
   },
   "files": [
-    "cli.js",
     "index.js"
   ],
   "keywords": [
-    "cli-app",
-    "cli",
-    "bin",
-    "app",
     "file",
     "url",
     "uri",
@@ -32,11 +26,11 @@
     "scheme",
     "slash"
   ],
-  "dependencies": {
-    "meow": "^3.7.0"
-  },
   "devDependencies": {
-    "mocha": "*",
+    "ava": "*",
     "xo": "*"
+  },
+  "xo": {
+    "esnext": true
   }
 }

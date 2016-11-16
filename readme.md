@@ -27,24 +27,11 @@ fileUrl('unicorn.jpg', {resolve: false});
 ```
 
 
-## CLI
+## Related
 
-```
-$ npm install --global file-url
-```
-
-```
-$ file-url --help
-
-  Usage
-    $ file-url [path]
-
-  Example
-    $ file-url
-    file:///Users/sindresorhus/dev/file-url
-```
+- [file-url-cli](https://github.com/sindresorhus/file-url-cli) - CLI for this module
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

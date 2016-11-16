@@ -1,16 +1,16 @@
 'use strict';
-var path = require('path');
+const path = require('path');
 
-module.exports = function (str, options) {
+module.exports = (str, opts) => {
 	if (typeof str !== 'string') {
 		throw new Error('Expected a string');
 	}
 
-	options = options || {};
+	opts = Object.assign({resolve: true}, opts);
 
-	var pathName = str;
+	let pathName = str;
 
-	if (options.resolve !== false) {
+	if (opts.resolve) {
 		pathName = path.resolve(str);
 	}
 
@@ -18,8 +18,8 @@ module.exports = function (str, options) {
 
 	// Windows drive letter must be prefixed with a slash
 	if (pathName[0] !== '/') {
-		pathName = '/' + pathName;
+		pathName = `/${pathName}`;
 	}
 
-	return encodeURI('file://' + pathName);
+	return encodeURI(`file://${pathName}`);
 };
