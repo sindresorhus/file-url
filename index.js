@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = (str, opts) => {
 	if (typeof str !== 'string') {
-		throw new TypeError('Expected a string, got ' + typeof str);
+		throw new TypeError(`Expected a string, got ${typeof str}`);
 	}
 
 	opts = Object.assign({resolve: true}, opts);
