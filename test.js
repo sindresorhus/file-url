@@ -12,7 +12,7 @@ test('converts path to file url', t => {
 });
 
 test('escapes reserved characters in path', t => {
-	t.regex(m('Bad?/A#1.jpg'), /^file:\/\/\/.*\/Bad%3F\/A%231.jpg$/);
+	t.regex(m('Bad?/A#1.jpg'), /^file:\/\/\/.*\/Bad%3F\/A%231\.jpg$/);
 });
 
 test('accepts resolve parameter', t => {
