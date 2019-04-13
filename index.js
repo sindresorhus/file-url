@@ -1,17 +1,17 @@
 'use strict';
 const path = require('path');
 
-module.exports = (str, opts) => {
-	if (typeof str !== 'string') {
-		throw new TypeError(`Expected a string, got ${typeof str}`);
+module.exports = (filePath, options) => {
+	if (typeof filePath !== 'string') {
+		throw new TypeError(`Expected a string, got ${typeof filePath}`);
 	}
 
-	opts = Object.assign({resolve: true}, opts);
+	options = {resolve: true, ...options};
 
-	let pathName = str;
+	let pathName = filePath;
 
-	if (opts.resolve) {
-		pathName = path.resolve(str);
+	if (options.resolve) {
+		pathName = path.resolve(filePath);
 	}
 
 	pathName = pathName.replace(/\\/g, '/');
