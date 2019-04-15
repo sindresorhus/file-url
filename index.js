@@ -6,7 +6,10 @@ module.exports = (filePath, options) => {
 		throw new TypeError(`Expected a string, got ${typeof filePath}`);
 	}
 
-	options = {resolve: true, ...options};
+	options = {
+		resolve: true,
+		...options
+	};
 
 	let pathName = filePath;
 

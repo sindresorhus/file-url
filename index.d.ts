@@ -10,10 +10,10 @@ declare namespace fileUrl {
 }
 
 /**
-Convert a path to a file url.
+Convert a file path to a file URL.
 
-@param path - File path to convert.
-@returns The `path` converted to a file url.
+@param filePath - File path to convert.
+@returns The `filePath` converted to a file URL.
 
 @example
 ```
@@ -29,6 +29,6 @@ fileUrl('unicorn.jpg', {resolve: false});
 //=> 'file:///unicorn.jpg'
 ```
 */
-declare function fileUrl(path: string, options?: fileUrl.Options): string;
+declare function fileUrl(filePath: string, options?: fileUrl.Options): string;
 
 export = fileUrl;

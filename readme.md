@@ -1,6 +1,6 @@
 # file-url [![Build Status](https://travis-ci.org/sindresorhus/file-url.svg?branch=master)](https://travis-ci.org/sindresorhus/file-url)
 
-> Convert a path to a file url: `unicorn.jpg` → `file:///Users/sindresorhus/unicorn.jpg`
+> Convert a file path to a file url: `unicorn.jpg` → `file:///Users/sindresorhus/unicorn.jpg`
 
 
 ## Install
@@ -27,11 +27,11 @@ fileUrl('unicorn.jpg', {resolve: false});
 
 ## API
 
-### fileUrl(path, [options])
+### fileUrl(filePath, [options])
 
-Returns the `path` converted to a file url.
+Returns the `filePath` converted to a file URL.
 
-#### path
+#### filePath
 
 Type: `string`
 
@@ -39,7 +39,7 @@ File path to convert.
 
 #### options
 
-Type: `object`
+Type: `Object`
 
 ##### resolve
 
