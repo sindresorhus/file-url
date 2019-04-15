@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save file-url
+$ npm install file-url
 ```
 
 
@@ -21,10 +21,32 @@ fileUrl('unicorn.jpg');
 fileUrl('/Users/pony/pics/unicorn.jpg');
 //=> 'file:///Users/pony/pics/unicorn.jpg'
 
-// passing {resolve: false} will make it not call path.resolve() on the path
 fileUrl('unicorn.jpg', {resolve: false});
 //=> 'file:///unicorn.jpg'
 ```
+
+## API
+
+### fileUrl(path, [options])
+
+Returns the `path` converted to a file url.
+
+#### path
+
+Type: `string`
+
+File path to convert.
+
+#### options
+
+Type: `object`
+
+##### resolve
+
+Type: `boolean`<br>
+Default: `true`
+
+Passing `false` will make it not call `path.resolve()` on the path.
 
 
 ## Related
