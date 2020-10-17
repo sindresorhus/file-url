@@ -26,5 +26,5 @@ module.exports = (filePath, options) => {
 
 	// Escape required characters for path components
 	// See: https://tools.ietf.org/html/rfc3986#section-3.3
-	return encodeURI(`file://${pathName}`).replace(/[?#]/g, encodeURIComponent);
+	return encodeURI(`file://${pathName.replace(/[?#]/g, encodeURIComponent)}`);
 };
