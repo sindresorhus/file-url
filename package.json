@@ -1,38 +1,40 @@
 {
-	"name": "file-url",
-	"version": "4.0.0",
-	"description": "Convert a file path to a file url: `unicorn.jpg` → `file:///Users/sindresorhus/unicorn.jpg`",
-	"license": "MIT",
-	"repository": "sindresorhus/file-url",
-	"funding": "https://github.com/sponsors/sindresorhus",
-	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "https://sindresorhus.com"
-	},
-	"type": "module",
-	"exports": "./index.js",
-	"engines": {
-		"node": ">=12"
-	},
-	"scripts": {
-		"test": "xo && ava && tsd"
-	},
-	"files": [
-		"index.js",
-		"index.d.ts"
-	],
-	"keywords": [
-		"file",
-		"url",
-		"uri",
-		"path",
-		"scheme",
-		"slash"
-	],
-	"devDependencies": {
-		"ava": "^3.15.0",
-		"tsd": "^0.14.0",
-		"xo": "^0.38.2"
-	}
+  "name": "file-url",
+  "version": "4.0.0",
+  "description": "Convert a file path to a file url: `unicorn.jpg` → `file:///Users/sindresorhus/unicorn.jpg`",
+  "license": "MIT",
+  "repository": "sindresorhus/file-url",
+  "funding": "https://github.com/sponsors/sindresorhus",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "https://sindresorhus.com"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "test": "xo && ava && tsd"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "keywords": [
+    "file",
+    "url",
+    "uri",
+    "path",
+    "scheme",
+    "slash"
+  ],
+  "dependencies": {
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "tsd": "^0.14.0",
+    "xo": "^0.38.2"
+  }
 }
