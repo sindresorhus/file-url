@@ -2,10 +2,13 @@
 
 > Convert a file path to a file url: `unicorn.jpg` → `file:///Users/sindresorhus/unicorn.jpg`
 
+> [!TIP]
+> Node.js supports this built-in now with [`url.pathToFileURL(path)`](https://nodejs.org/api/url.html#urlpathtofileurlpath).
+
 ## Install
 
-```
-$ npm install file-url
+```sh
+npm install file-url
 ```
 
 ## Usage
@@ -29,11 +32,13 @@ fileUrl('unicorn.jpg', {resolve: false});
 
 Returns the `filePath` converted to a file URL.
 
+It does not support filenames with backslashes.
+
 #### filePath
 
 Type: `string`
 
-File path to convert.
+The file path to convert.
 
 #### options
 

@@ -10,7 +10,7 @@ export interface Options {
 /**
 Convert a file path to a file URL.
 
-@param filePath - File path to convert.
+@param filePath - The file path to convert.
 @returns The `filePath` converted to a file URL.
 
 @example
