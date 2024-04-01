@@ -12,8 +12,6 @@ export default function fileUrl(filePath, options = {}) {
 		pathName = path.resolve(filePath);
 	}
 
-	pathName = pathName.replace(/\\/g, '/');
-
 	// Windows drive letter must be prefixed with a slash.
 	if (pathName[0] !== '/') {
 		pathName = `/${pathName}`;
